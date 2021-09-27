@@ -1,4 +1,4 @@
-import * as S from "./styles";
+import * as S from "../styles/HomeStyles";
 
 import HomeCarrousel from "@molecules/HomeCarrousel";
 import NavbarScreen from "@templates/NavbarScreen";
