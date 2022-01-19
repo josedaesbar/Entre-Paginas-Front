@@ -18,6 +18,7 @@ import {
   IoLogoFacebook,
   IoLogoWhatsapp,
   IoLogoInstagram,
+  IoIosCheckmark,
 } from "react-icons/io";
 
 export const Icons = {
@@ -41,4 +42,6 @@ export const Icons = {
   FACEBOOK: IoLogoFacebook,
   WHATSAPP: IoLogoWhatsapp,
   INSTAGRAM: IoLogoInstagram,
+
+  CHECK: IoIosCheckmark,
 };

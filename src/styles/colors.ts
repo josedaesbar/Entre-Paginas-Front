@@ -5,6 +5,7 @@ export enum Colors {
   RED = "#D20507",
   RED_B = "#FFDBDB",
   RED_C = "#F8181A",
+  RED_D = "#FF4343",
 
   BLACK = "#000219",
   BLACK_B = "#000000",
@@ -16,4 +17,6 @@ export enum Colors {
   YELLOW_A = "#FFCF52",
 
   BROWN_A = "#B26B00",
+
+  BLUE_A = "#009AF7",
 }

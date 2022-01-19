@@ -70,7 +70,7 @@ const Footer = () => {
             Suscribete
           </Text>
           <S.InputSubscribeContainer>
-            <S.InputSubscribe type={"text"} placeholder="Escribe tu correo" />
+            <S.InputSubscribe type={"email"} placeholder="Escribe tu correo" />
             <Button buttonColor={Colors.GRAY}>
               <Text
                 fontSize={FontsSizes.SMALL_C}

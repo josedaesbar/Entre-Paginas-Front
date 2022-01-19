@@ -1,6 +1,6 @@
 import { Colors } from "@styles/colors";
 import { PaddingHorizontal } from "@styles/constants";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.nav`
   width: 100%;
@@ -42,12 +42,20 @@ export const CategoriesContainer = styled.div<SCategoriesMenuPropTypes>`
   transition-duration: 0.15s;
 `;
 
+export const LogoLink = styled.div`
+  cursor: pointer;
+`;
+
 export const MenuList = styled.ul`
   display: flex;
   column-gap: 20px;
 `;
 
-export const MenuItem = styled.li`
+interface SMenuItem {
+  isActiveLink?: boolean;
+}
+
+export const MenuItem = styled.li<SMenuItem>`
   list-style: none;
   cursor: pointer;
   display: grid;
@@ -60,6 +68,14 @@ export const MenuItem = styled.li`
       color: ${Colors.BLACK};
     }
   }
+
+  ${({ isActiveLink }) =>
+    isActiveLink &&
+    css`
+      & span {
+        color: ${Colors.BLACK};
+      }
+    `};
 `;
 
 export const ContentRight = styled.div`

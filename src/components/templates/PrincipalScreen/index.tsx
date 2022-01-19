@@ -1,10 +1,10 @@
-import { Text } from "@atoms/Text";
-import NavigationBar from "@organisms/NavigationBar";
-import { FontsSizes, FontsWeight, TColor } from "@styles/fonts";
-import { FC, useState } from "react";
 import * as S from "./styles";
 
-const NavbarScreen: FC = ({ children }) => {
+import NavigationBar from "@organisms/NavigationBar";
+import Footer from "@templates/Footer";
+import { FC, useState } from "react";
+
+const PrincipalScreen: FC = ({ children }) => {
   const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
 
   const toggleActiveMenu = (value: boolean) => {
@@ -20,8 +20,9 @@ const NavbarScreen: FC = ({ children }) => {
         {isMenuActive && <S.DarkSccreen />}
         {children}
       </S.Content>
+      <Footer />
     </S.Container>
   );
 };
 
-export default NavbarScreen;
+export default PrincipalScreen;

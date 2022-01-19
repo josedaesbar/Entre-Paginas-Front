@@ -7,14 +7,18 @@ import InputSearch from "@molecules/InputSearch";
 import { Icons } from "@styles/Icons";
 import { ImageAtom } from "@atoms/Image";
 import { FontsSizes, FontsWeight, TColor } from "@styles/fonts";
+
 import { useEffect, useRef, useState } from "react";
-import { CategoriesData } from "application/utils/CategoriesData";
+import Link from "next/link";
+import { useRouter } from "next/dist/client/router";
 
 interface NavigationBarPropTypes {
   setIsActiveMenu(value: boolean): void;
 }
 
 const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
+  const route = useRouter();
+
   const [isCategoriesActive, setIsCategoriesActive] = useState<boolean>(false);
 
   const categoryMenuRef = useRef<HTMLDivElement>(null);
@@ -43,23 +47,29 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
   return (
     <S.Container>
       <S.ContentLeft>
-        <ImageAtom src={Logo} alt="" />
+        <S.LogoLink>
+          <Link href="/" passHref>
+            <ImageAtom src={Logo} alt="" />
+          </Link>
+        </S.LogoLink>
 
         <S.MenuList>
-          <S.MenuItem>
-            <Icon
-              Icon={Icons.LIST}
-              textColor={TColor.GRAY}
-              size={FontsSizes.MEDIUM_B}
-            />
-            <Span
-              fontSize={FontsSizes.SMALL_B}
-              fontWeight={FontsWeight.MEDIUM}
-              textColor={TColor.GRAY}
-            >
-              CATEGORIAS
-            </Span>
-          </S.MenuItem>
+          <Link href="/library" passHref>
+            <S.MenuItem isActiveLink={route.pathname.split("/")[1] === "library"}>
+              <Icon
+                Icon={Icons.LIST}
+                textColor={TColor.GRAY}
+                size={FontsSizes.MEDIUM_B}
+              />
+              <Span
+                fontSize={FontsSizes.SMALL_B}
+                fontWeight={FontsWeight.MEDIUM}
+                textColor={TColor.GRAY}
+              >
+                BIBLIOTECA
+              </Span>
+            </S.MenuItem>
+          </Link>
           <S.MenuItem>
             <Icon
               Icon={Icons.NOTIFICATION_FULL}
