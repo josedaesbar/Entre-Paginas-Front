@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Text } from "@atoms/Text";
 import { FontsSizes, FontsWeight, TColor } from "@styles/fonts";
 import StarsCalification from "@molecules/StarsCalification";
+import { Button } from "@atoms/Buttons";
+import { Colors } from "@styles/colors";
 
 interface CardProductsPropTypes {
   product: Products;
@@ -36,15 +38,15 @@ const CardProducts = ({ product }: CardProductsPropTypes) => {
         >
           S/. {product.price}
         </Text>
-        <S.ButtonShop>
+        <Button buttonColor={Colors.RED}>
           <Text
-            fontSize={FontsSizes.SMALL_B}
+            fontSize={FontsSizes.SMALL_C}
             fontWeight={FontsWeight.MEDIUM}
             textColor={TColor.WHITE}
           >
             Comprar
           </Text>
-        </S.ButtonShop>
+        </Button>
       </S.InformationContainer>
     </S.Container>
   );

@@ -2,13 +2,13 @@ import * as S from "./styles";
 import Logo from "../../../assets/img/utils/Logo.png";
 
 import Icon from "@atoms/Icon";
-import { Text } from "@atoms/Text";
+import { Span, Text } from "@atoms/Text";
 import InputSearch from "@molecules/InputSearch";
 import { Icons } from "@styles/Icons";
 import { ImageAtom } from "@atoms/Image";
 import { FontsSizes, FontsWeight, TColor } from "@styles/fonts";
 import { useEffect, useRef, useState } from "react";
-import CategoriesMenu from "@organisms/CategoriesMenu";
+import { CategoriesData } from "application/utils/CategoriesData";
 
 interface NavigationBarPropTypes {
   setIsActiveMenu(value: boolean): void;
@@ -43,26 +43,52 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
   return (
     <S.Container>
       <S.ContentLeft>
-        <Text
-          fontSize={FontsSizes.SMALL_C}
-          textColor={TColor.BLACK}
-          fontWeight={FontsWeight.MEDIUM}
-        >
-          Categorias
-        </Text>
-        <S.IconContainer onClick={onPressMenu} ref={iconRef}>
-          <Icon
-            Icon={Icons.MENU}
-            textColor={TColor.BLACK}
-            size={FontsSizes.MEDIUM_B}
-          />
-        </S.IconContainer>
-
         <ImageAtom src={Logo} alt="" />
 
-        <S.CategoriesContainer isActive={isCategoriesActive} ref={categoryMenuRef}>
-          {isCategoriesActive && <CategoriesMenu />}
-        </S.CategoriesContainer>
+        <S.MenuList>
+          <S.MenuItem>
+            <Icon
+              Icon={Icons.LIST}
+              textColor={TColor.GRAY}
+              size={FontsSizes.MEDIUM_B}
+            />
+            <Span
+              fontSize={FontsSizes.SMALL_B}
+              fontWeight={FontsWeight.MEDIUM}
+              textColor={TColor.GRAY}
+            >
+              CATEGORIAS
+            </Span>
+          </S.MenuItem>
+          <S.MenuItem>
+            <Icon
+              Icon={Icons.NOTIFICATION_FULL}
+              textColor={TColor.GRAY}
+              size={FontsSizes.MEDIUM_B}
+            />
+            <Span
+              fontSize={FontsSizes.SMALL_B}
+              fontWeight={FontsWeight.MEDIUM}
+              textColor={TColor.GRAY}
+            >
+              PROXIMOS ESTRENOS
+            </Span>
+          </S.MenuItem>
+          <S.MenuItem>
+            <Icon
+              Icon={Icons.PAPER}
+              textColor={TColor.GRAY}
+              size={FontsSizes.MEDIUM_B}
+            />
+            <Span
+              fontSize={FontsSizes.SMALL_B}
+              fontWeight={FontsWeight.MEDIUM}
+              textColor={TColor.GRAY}
+            >
+              NOTICIAS
+            </Span>
+          </S.MenuItem>
+        </S.MenuList>
       </S.ContentLeft>
 
       <S.ContentRight>

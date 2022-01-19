@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const Container = styled.nav`
   width: 100%;
-  height: 65px;
+  height: 75px;
   background-color: ${Colors.WHITE};
 
   display: flex;
@@ -14,16 +14,16 @@ export const Container = styled.nav`
   box-sizing: border-box;
   user-select: none;
 
-  border-bottom: 1px solid ${Colors.BLACK};
+  box-shadow: 0 0 10px 0 ${Colors.GRAY_C};
 `;
 
 export const ContentLeft = styled.div`
   position: relative;
   display: grid;
   height: 100%;
-  grid-template-columns: repeat(2, min-content) 80px;
+  grid-template-columns: 90px min-content;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 60px;
 `;
 
 export interface SCategoriesMenuPropTypes {
@@ -40,6 +40,26 @@ export const CategoriesContainer = styled.div<SCategoriesMenuPropTypes>`
   transition-property: opacity;
   transition-timing-function: linear;
   transition-duration: 0.15s;
+`;
+
+export const MenuList = styled.ul`
+  display: flex;
+  column-gap: 20px;
+`;
+
+export const MenuItem = styled.li`
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 5px;
+  align-items: center;
+
+  &:hover {
+    & span {
+      color: ${Colors.BLACK};
+    }
+  }
 `;
 
 export const ContentRight = styled.div`

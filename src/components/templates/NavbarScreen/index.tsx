@@ -14,15 +14,6 @@ const NavbarScreen: FC = ({ children }) => {
   return (
     <S.Container>
       <S.Header>
-        <S.Announcementheader>
-          <Text
-            textColor={TColor.WHITE}
-            fontWeight={FontsWeight.MEDIUM}
-            fontSize={FontsSizes.SMALL_A}
-          >
-            Espacio para enlace de algún servico que se quiera resaltar
-          </Text>
-        </S.Announcementheader>
         <NavigationBar setIsActiveMenu={toggleActiveMenu} />
       </S.Header>
       <S.Content>

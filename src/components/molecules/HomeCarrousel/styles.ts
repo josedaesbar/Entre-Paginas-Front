@@ -5,7 +5,6 @@ export const Container = styled.div`
   position: relative;
   width: 100%;
   height: 600px;
-  border-radius: 10px;
 
   display: flex;
   justify-content: center;
@@ -43,17 +42,26 @@ export const ImageContainer = styled.div`
 export const ArrowBack = styled.div`
   position: absolute;
   left: 0;
-  width: 50px;
-  height: 100px;
-  margin-left: 10px;
+  width: 75px;
+  height: 75px;
 
   cursor: pointer;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100px;
+
+  transition-property: background-color;
+  transition-duration: 0.2s;
+
+  & svg {
+    margin-right: 5px;
+  }
 
   &:hover {
+    background: rgba(0, 0, 0, 0.6);
+
     & svg {
       filter: drop-shadow(0 0 10px ${Colors.WHITE});
     }
@@ -63,17 +71,26 @@ export const ArrowBack = styled.div`
 export const ArrowNext = styled.div`
   position: absolute;
   right: 0;
-  width: 50px;
-  height: 100px;
-  margin-right: 10px;
+  width: 75px;
+  height: 75px;
 
   cursor: pointer;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 100px;
+
+  transition-property: background-color;
+  transition-duration: 0.2s;
+
+  & svg {
+    margin-left: 5px;
+  }
 
   &:hover {
+    background: rgba(0, 0, 0, 0.6);
+
     & svg {
       filter: drop-shadow(0 0 10px ${Colors.WHITE});
     }

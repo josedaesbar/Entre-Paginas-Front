@@ -12,7 +12,7 @@ export const Header = styled.header`
   z-index: 100;
 
   display: grid;
-  grid-auto-rows: min-content min-content;
+  grid-auto-rows: min-content;
 `;
 
 export const Announcementheader = styled.div`

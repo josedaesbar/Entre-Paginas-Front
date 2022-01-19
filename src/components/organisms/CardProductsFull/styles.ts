@@ -17,7 +17,6 @@ export const ImageContainer = styled.div`
   flex: none;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 10px 0 ${Colors.BLACK};
 
   display: flex;
 
@@ -29,6 +28,14 @@ export const ImageContainer = styled.div`
   & div:first-child {
     width: 100%;
     height: 100%;
+  }
+
+  transition-property: transform;
+  transition-duration: 0.1s;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 ${Colors.GRAY_C};
+    transform: scale(1.05);
   }
 `;
 
@@ -127,6 +134,7 @@ export const GiftButton = styled(Text)`
 `;
 
 export const ButtonGiftContainer = styled.div`
+  width: 100%;
   justify-self: flex-end;
   display: grid;
   grid-template-rows: repeat(2, min-content);

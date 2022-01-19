@@ -15,13 +15,20 @@ export const ImageContainer = styled.div`
   flex: none;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 10px 0 ${Colors.BLACK};
 
   display: flex;
 
   & div {
     width: 100%;
     height: 100%;
+  }
+
+  transition-property: transform;
+  transition-duration: 0.1s;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 ${Colors.GRAY_C};
+    transform: scale(1.05);
   }
 `;
 
@@ -37,25 +44,4 @@ export const InformationContainer = styled.div`
 
 export const StarsContainer = styled.div`
   justify-self: flex-end;
-`;
-
-export const ButtonShop = styled.button`
-  width: 100px;
-  height: 100%;
-  border: 0;
-  outline: 0;
-  justify-self: flex-end;
-
-  cursor: pointer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: ${Colors.RED};
-  box-shadow: 0 0 10px 0 ${Colors.BLACK};
-
-  &:hover {
-    background-color: ${Colors.RED_C};
-  }
 `;

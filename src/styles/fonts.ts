@@ -16,11 +16,13 @@ export enum FontsSizes {
   MEDIUM_C = "1.75em",
 
   LARGE_A = "2.25em",
-  LARGE_B = "4em",
+  LARGE_B = "3.25em",
+  LARGE_C = "4em",
 }
 
 export enum TColor {
   BLACK = Colors.BLACK,
   GRAY = Colors.GRAY,
   WHITE = Colors.WHITE,
+  YELLOW = Colors.YELLOW_A,
 }

@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const ContainerSlider = styled.div`
   width: 100%;
-  overflow: hidden;
+  overflow-x: clip;
 `;
 
 export const SliderContent = styled.div`

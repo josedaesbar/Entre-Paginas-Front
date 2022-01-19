@@ -9,7 +9,13 @@ import {
 import { ImSearch } from "react-icons/im";
 import { GiBookPile } from "react-icons/gi";
 import { IoPersonOutline } from "react-icons/io5";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import {
+  IoIosArrowBack,
+  IoIosArrowForward,
+  IoIosList,
+  IoMdPaper,
+  IoMdNotifications,
+} from "react-icons/io";
 
 export const Icons = {
   SEARCH: ImSearch,
@@ -23,4 +29,8 @@ export const Icons = {
   STAR_COMPLETE: MdStar,
   STAR_INCOMPLETE: MdStarHalf,
   STAR_EMPTY: MdStarBorder,
+
+  LIST: IoIosList,
+  PAPER: IoMdPaper,
+  NOTIFICATION_FULL: IoMdNotifications,
 };

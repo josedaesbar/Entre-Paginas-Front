@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  padding: 40px 80px;
+
   box-sizing: border-box;
 
   display: grid;
@@ -19,4 +19,13 @@ export const Content = styled.div`
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
   row-gap: 50px;
+`;
+
+export const ContentItem = styled.div`
+  padding: 0 80px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-auto-columns: 1fr;
+  row-gap: 80px;
 `;

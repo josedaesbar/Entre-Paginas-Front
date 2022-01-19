@@ -8,6 +8,8 @@ import { FontsSizes, FontsWeight, TColor } from "@styles/fonts";
 import StarsCalification from "@molecules/StarsCalification";
 import Icon from "@atoms/Icon";
 import { Icons } from "@styles/Icons";
+import { Button } from "@atoms/Buttons";
+import { Colors } from "@styles/colors";
 
 interface CardProductsFullPropTypes {
   product: Products;
@@ -85,7 +87,7 @@ const CardProductsFull = ({ product }: CardProductsFullPropTypes) => {
           )}
         </S.ProductPricesContainer>
         <S.ButtonGiftContainer>
-          <S.ButtonShop>
+          <Button buttonColor={Colors.RED}>
             <S.GiftButton
               fontSize={FontsSizes.SMALL_B}
               fontWeight={FontsWeight.MEDIUM}
@@ -98,8 +100,8 @@ const CardProductsFull = ({ product }: CardProductsFullPropTypes) => {
                 textColor={TColor.WHITE}
               />
             </S.GiftButton>
-          </S.ButtonShop>
-          <S.ButtonShop>
+          </Button>
+          <Button buttonColor={Colors.RED}>
             <Text
               fontSize={FontsSizes.SMALL_B}
               fontWeight={FontsWeight.MEDIUM}
@@ -107,7 +109,7 @@ const CardProductsFull = ({ product }: CardProductsFullPropTypes) => {
             >
               Comprar
             </Text>
-          </S.ButtonShop>
+          </Button>
         </S.ButtonGiftContainer>
       </S.InformationContainer>
     </S.Container>

@@ -11,4 +11,9 @@ export enum Colors {
 
   GRAY = "#505A66",
   GRAY_B = "#808080",
+  GRAY_C = "#C9C9C9",
+
+  YELLOW_A = "#FFCF52",
+
+  BROWN_A = "#B26B00",
 }
