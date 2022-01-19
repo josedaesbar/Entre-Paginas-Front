@@ -87,20 +87,13 @@ const CardProductsFull = ({ product }: CardProductsFullPropTypes) => {
           )}
         </S.ProductPricesContainer>
         <S.ButtonGiftContainer>
-          <Button buttonColor={Colors.RED}>
-            <S.GiftButton
-              fontSize={FontsSizes.SMALL_B}
-              fontWeight={FontsWeight.MEDIUM}
-              textColor={TColor.WHITE}
-            >
-              Regalar
-              <Icon
-                Icon={Icons.GIFT}
-                size={FontsSizes.MEDIUM_A}
-                textColor={TColor.WHITE}
-              />
-            </S.GiftButton>
-          </Button>
+          <S.IconContainer>
+            <Icon
+              Icon={Icons.GIFT}
+              size={FontsSizes.MEDIUM_A}
+              textColor={TColor.BLACK}
+            />
+          </S.IconContainer>
           <Button buttonColor={Colors.RED}>
             <Text
               fontSize={FontsSizes.SMALL_B}

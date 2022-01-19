@@ -77,6 +77,16 @@ export const ProductPricesContainer = styled.div`
   row-gap: 2.5px;
 `;
 
+export const IconContainer = styled.div`
+  cursor: pointer;
+  transition-property: transform;
+  transition-duration: 0.1s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+`;
+
 interface ProductPricePropType {
   isDiscount?: boolean;
 }

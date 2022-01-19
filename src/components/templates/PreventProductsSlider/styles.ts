@@ -15,7 +15,7 @@ export const ContainerSlider = styled.div`
 export const SliderContent = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 32%);
+  grid-template-columns: repeat(9, 32%);
   box-sizing: border-box;
   column-gap: 2%;
 

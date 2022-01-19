@@ -17,6 +17,8 @@ export const OptionsContainer = styled.div`
   display: grid;
   grid-auto-rows: 35px;
   cursor: pointer;
+  box-shadow: 0 0 5px ${Colors.GRAY_B};
+  overflow: hidden;
 
   &:focus-visible {
     outline: 0;
@@ -24,12 +26,10 @@ export const OptionsContainer = styled.div`
 
   & div:nth-child(1) {
     border-radius: 5px 5px 0 0;
-    border-top: 1px solid ${Colors.GRAY_B};
   }
 
   & div:last-child {
     border-radius: 0 0 5px 5px;
-    border-bottom: 1px solid ${Colors.GRAY_B};
   }
 `;
 
@@ -44,7 +44,6 @@ export const ButtonSelect = styled.div`
   padding: 5px 15px;
   box-sizing: border-box;
 
-  border: 1px solid ${Colors.GRAY_B};
   background-color: ${Colors.RED};
   border-radius: 5px;
   user-select: none;
@@ -58,8 +57,6 @@ export const SelectItem = styled.div`
 
   display: flex;
   align-items: center;
-  border-left: 1px solid ${Colors.GRAY_B};
-  border-right: 1px solid ${Colors.GRAY_B};
 
   user-select: none;
 

@@ -65,4 +65,20 @@ export const ProductsData: Products[] = [
     price: 125,
     stars: 4,
   },
+  {
+    id: "6",
+    autor: "Autor 06",
+    image: Product_02,
+    name: "Libro 06",
+    price: 60,
+    stars: 5,
+  },
+  {
+    id: "7",
+    autor: "Autor 07",
+    image: Product_04,
+    name: "Libro 07",
+    price: 125,
+    stars: 4,
+  },
 ];
