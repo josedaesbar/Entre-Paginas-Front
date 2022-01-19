@@ -6,7 +6,7 @@ import {
   MdStarBorder,
   MdStarHalf,
 } from "react-icons/md";
-import { ImSearch } from "react-icons/im";
+import { ImBook, ImSearch } from "react-icons/im";
 import { GiBookPile } from "react-icons/gi";
 import { IoPersonOutline } from "react-icons/io5";
 import {
@@ -15,6 +15,9 @@ import {
   IoIosList,
   IoMdPaper,
   IoMdNotifications,
+  IoLogoFacebook,
+  IoLogoWhatsapp,
+  IoLogoInstagram,
 } from "react-icons/io";
 
 export const Icons = {
@@ -22,6 +25,7 @@ export const Icons = {
   PERSON: IoPersonOutline,
   GIFT: MdCardGiftcard,
   BOOK: GiBookPile,
+  BOOK_B: ImBook,
   MENU: MdMenu,
   ARROW_RIGHT: IoIosArrowForward,
   ARROW_LEFT: IoIosArrowBack,
@@ -33,4 +37,8 @@ export const Icons = {
   LIST: IoIosList,
   PAPER: IoMdPaper,
   NOTIFICATION_FULL: IoMdNotifications,
+
+  FACEBOOK: IoLogoFacebook,
+  WHATSAPP: IoLogoWhatsapp,
+  INSTAGRAM: IoLogoInstagram,
 };

@@ -97,21 +97,21 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
           <S.IconContainer>
             <Icon
               Icon={Icons.PERSON}
-              textColor={TColor.BLACK}
+              textColor={TColor.GRAY}
               size={FontsSizes.MEDIUM_B}
             />
           </S.IconContainer>
           <S.IconContainer>
             <Icon
               Icon={Icons.GIFT}
-              textColor={TColor.BLACK}
+              textColor={TColor.GRAY}
               size={FontsSizes.MEDIUM_B}
             />
           </S.IconContainer>
           <S.IconContainer>
             <Icon
               Icon={Icons.BOOK}
-              textColor={TColor.BLACK}
+              textColor={TColor.GRAY}
               size={FontsSizes.MEDIUM_B}
             />
           </S.IconContainer>

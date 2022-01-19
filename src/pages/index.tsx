@@ -1,5 +1,7 @@
 import * as S from "../styles/HomeStyles";
 
+import { createGlobalStyle } from "styled-components";
+
 import HomeCarrousel from "@molecules/HomeCarrousel";
 import NavbarScreen from "@templates/NavbarScreen";
 import BestSellers from "@organisms/BestSellers";

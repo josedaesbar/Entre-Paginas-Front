@@ -7,11 +7,7 @@ import { Icons } from "@styles/Icons";
 const InputSearch = () => {
   return (
     <S.Container>
-      <Icon
-        Icon={Icons.SEARCH}
-        size={FontsSizes.MEDIUM_B}
-        textColor={TColor.BLACK}
-      />
+      <Icon Icon={Icons.SEARCH} size={FontsSizes.SMALL_C} textColor={TColor.GRAY} />
       <S.Input type="text" placeholder="Buscar" />
     </S.Container>
   );

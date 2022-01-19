@@ -7,7 +7,7 @@ interface ButtonStylesProps {
 
 const ButtonStyles = css<ButtonStylesProps>`
   width: 100%;
-  padding: 5px 0px;
+  padding: 5px 10px;
   box-sizing: border-box;
   border: 0;
   outline: 0;

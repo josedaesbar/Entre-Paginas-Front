@@ -9,7 +9,7 @@ export const Container = styled.div`
   grid-template-columns: 20px 1fr;
   column-gap: 5px;
 
-  border: 1px solid ${Colors.BLACK};
+  border: 1px solid ${Colors.GRAY};
   border-radius: 7.5px;
   padding: 0 5px;
   box-sizing: border-box;
