@@ -86,20 +86,22 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
               </Span>
             </S.MenuItem>
           </Link>
-          <S.MenuItem>
-            <Icon
-              Icon={Icons.PAPER}
-              textColor={TColor.GRAY}
-              size={FontsSizes.MEDIUM_B}
-            />
-            <Span
-              fontSize={FontsSizes.SMALL_B}
-              fontWeight={FontsWeight.MEDIUM}
-              textColor={TColor.GRAY}
-            >
-              NOTICIAS
-            </Span>
-          </S.MenuItem>
+          <Link href="/news" passHref>
+            <S.MenuItem>
+              <Icon
+                Icon={Icons.PAPER}
+                textColor={TColor.GRAY}
+                size={FontsSizes.MEDIUM_B}
+              />
+              <Span
+                fontSize={FontsSizes.SMALL_B}
+                fontWeight={FontsWeight.MEDIUM}
+                textColor={TColor.GRAY}
+              >
+                NOTICIAS
+              </Span>
+            </S.MenuItem>
+          </Link>
         </S.MenuList>
       </S.ContentLeft>
 
