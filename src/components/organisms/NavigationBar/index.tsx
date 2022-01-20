@@ -71,7 +71,9 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
             </S.MenuItem>
           </Link>
           <Link href="/next-releases" passHref>
-            <S.MenuItem>
+            <S.MenuItem
+              isActiveLink={route.pathname.split("/")[1] === "next-releases"}
+            >
               <Icon
                 Icon={Icons.NOTIFICATION_FULL}
                 textColor={TColor.GRAY}
@@ -87,7 +89,7 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
             </S.MenuItem>
           </Link>
           <Link href="/news" passHref>
-            <S.MenuItem>
+            <S.MenuItem isActiveLink={route.pathname.split("/")[1] === "news"}>
               <Icon
                 Icon={Icons.PAPER}
                 textColor={TColor.GRAY}
