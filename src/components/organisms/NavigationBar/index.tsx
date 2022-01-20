@@ -70,20 +70,22 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
               </Span>
             </S.MenuItem>
           </Link>
-          <S.MenuItem>
-            <Icon
-              Icon={Icons.NOTIFICATION_FULL}
-              textColor={TColor.GRAY}
-              size={FontsSizes.MEDIUM_B}
-            />
-            <Span
-              fontSize={FontsSizes.SMALL_B}
-              fontWeight={FontsWeight.MEDIUM}
-              textColor={TColor.GRAY}
-            >
-              PROXIMOS ESTRENOS
-            </Span>
-          </S.MenuItem>
+          <Link href="/next-releases" passHref>
+            <S.MenuItem>
+              <Icon
+                Icon={Icons.NOTIFICATION_FULL}
+                textColor={TColor.GRAY}
+                size={FontsSizes.MEDIUM_B}
+              />
+              <Span
+                fontSize={FontsSizes.SMALL_B}
+                fontWeight={FontsWeight.MEDIUM}
+                textColor={TColor.GRAY}
+              >
+                PROXIMOS ESTRENOS
+              </Span>
+            </S.MenuItem>
+          </Link>
           <S.MenuItem>
             <Icon
               Icon={Icons.PAPER}
