@@ -6,7 +6,7 @@ const BestProductsCategory = () => {
   return (
     <S.Container>
       {ProductsData.map((v, i) => {
-        if (i > 4) return <></>;
+        if (i > 4) return;
         return <CardProducts key={i} product={v} />;
       })}
     </S.Container>

@@ -22,10 +22,12 @@ export const Content = styled.div`
 `;
 
 export const ContentItem = styled.div`
-  padding: 0 80px;
+  width: 85%;
+
   box-sizing: border-box;
 
   display: grid;
   grid-auto-columns: 1fr;
+  margin: 0 auto;
   row-gap: 80px;
 `;

@@ -101,21 +101,23 @@ const Footer = () => {
           </S.List>
         </S.InformationLists>
       </S.SecondColumn>
-      <S.ThirdColumn>
-        <Icon
-          Icon={Icons.BOOK_B}
-          textColor={TColor.WHITE}
-          size={FontsSizes.LARGE_C}
-        />
-        <Span
-          fontSize={FontsSizes.SMALL_C}
-          textColor={TColor.WHITE}
-          fontWeight={FontsWeight.THIN}
-          textCenter
-        >
-          Libro de Reclamaciones
-        </Span>
-      </S.ThirdColumn>
+      <S.Link href="/complaints-book">
+        <S.ThirdColumn>
+          <Icon
+            Icon={Icons.BOOK_B}
+            textColor={TColor.WHITE}
+            size={FontsSizes.LARGE_C}
+          />
+          <Span
+            fontSize={FontsSizes.SMALL_C}
+            textColor={TColor.WHITE}
+            fontWeight={FontsWeight.THIN}
+            textCenter
+          >
+            Libro de Reclamaciones
+          </Span>
+        </S.ThirdColumn>
+      </S.Link>
     </S.Container>
   );
 };

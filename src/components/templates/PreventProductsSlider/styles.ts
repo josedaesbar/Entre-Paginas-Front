@@ -4,12 +4,13 @@ export const Container = styled.div`
   width: 100%;
 
   display: grid;
-  grid-template-columns: 40px 1fr 40px;
+  grid-template-columns: min-content minmax(800px, 1fr) min-content;
 `;
 
 export const ContainerSlider = styled.div`
   width: 100%;
   overflow-x: clip;
+  box-sizing: border-box;
 `;
 
 export const SliderContent = styled.div`
@@ -35,7 +36,7 @@ interface SArrowsContainerPropTypes {
 }
 
 export const ArrowsContainer = styled.div<SArrowsContainerPropTypes>`
-  width: 100%;
+  width: 40px;
   height: 75px;
   margin: auto 0;
 

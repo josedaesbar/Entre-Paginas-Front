@@ -68,6 +68,7 @@ export const TitleProduct = styled.div`
 `;
 
 export const StarsContainer = styled.div`
+  width: 100px;
   justify-self: flex-end;
 `;
 
@@ -144,9 +145,14 @@ export const GiftButton = styled(Text)`
 `;
 
 export const ButtonGiftContainer = styled.div`
-  width: 100%;
+  width: 100px;
   justify-self: flex-end;
   display: grid;
   grid-template-rows: repeat(2, min-content);
   row-gap: 5px;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 100px;
+  justify-self: end;
 `;

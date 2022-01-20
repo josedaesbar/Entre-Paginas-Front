@@ -18,7 +18,7 @@ const StarsCalification = ({ stars }: StarsCalificationPropTypes) => {
           key={i}
           Icon={v === true ? Icons.STAR_COMPLETE : Icons.STAR_EMPTY}
           textColor={TColor.YELLOW}
-          size={FontsSizes.SMALL_C}
+          size={FontsSizes.MEDIUM_A}
         />
       ))}
     </S.Container>

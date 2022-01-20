@@ -1,10 +1,9 @@
 import * as S from "./styles";
-import Image_Section from "@assets/img/utils/Section.png";
 
 import { Text } from "@atoms/Text";
 import { FontsSizes, FontsWeight, TColor } from "@styles/fonts";
 
-import Image from "next/image";
+import SectionsCarrusel from "@molecules/SectionsCarrusel";
 
 const SectionsHome = () => {
   return (
@@ -27,9 +26,7 @@ const SectionsHome = () => {
           Nuestros últimos productos publicados en la plataforma de comercio online.
         </Text>
       </S.TitleContainer>
-      <S.ImagesContainer>
-        <Image src={Image_Section} alt="" objectFit="cover" />
-      </S.ImagesContainer>
+      <SectionsCarrusel />
     </S.Container>
   );
 };

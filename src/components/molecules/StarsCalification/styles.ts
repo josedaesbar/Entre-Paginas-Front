@@ -5,4 +5,5 @@ export const Container = styled.div`
 
   display: grid;
   grid-template-columns: repeat(5, min-content);
+  justify-content: center;
 `;

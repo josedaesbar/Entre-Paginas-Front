@@ -38,15 +38,17 @@ const CardProducts = ({ product }: CardProductsPropTypes) => {
         >
           S/. {product.price}
         </Text>
-        <Button buttonColor={Colors.RED}>
-          <Text
-            fontSize={FontsSizes.SMALL_C}
-            fontWeight={FontsWeight.MEDIUM}
-            textColor={TColor.WHITE}
-          >
-            Comprar
-          </Text>
-        </Button>
+        <S.ButtonContainer>
+          <Button buttonColor={Colors.RED}>
+            <Text
+              fontSize={FontsSizes.SMALL_C}
+              fontWeight={FontsWeight.MEDIUM}
+              textColor={TColor.WHITE}
+            >
+              Comprar
+            </Text>
+          </Button>
+        </S.ButtonContainer>
       </S.InformationContainer>
     </S.Container>
   );

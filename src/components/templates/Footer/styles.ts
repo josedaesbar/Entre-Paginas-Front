@@ -128,3 +128,7 @@ export const ThirdColumn = styled.a`
   text-decoration: none;
   cursor: pointer;
 `;
+
+export const Link = styled.a`
+  text-decoration: none;
+`;

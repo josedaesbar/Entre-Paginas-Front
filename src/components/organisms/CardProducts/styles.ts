@@ -43,5 +43,11 @@ export const InformationContainer = styled.div`
 `;
 
 export const StarsContainer = styled.div`
+  width: 100px;
   justify-self: flex-end;
+`;
+
+export const ButtonContainer = styled.div`
+  width: 100px;
+  justify-self: end;
 `;

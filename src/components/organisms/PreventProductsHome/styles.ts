@@ -4,6 +4,7 @@ export const Container = styled.div`
   width: 100%;
 
   display: grid;
+  grid-auto-columns: 1fr;
   grid-template-rows: min-content max-content;
 
   row-gap: 30px;
