@@ -3,7 +3,7 @@ import DINNERS_CLUB from "assets/img/utils/DinersClub.png";
 import AMERICAN_EXPRESS from "assets/img/utils/AmericanExpress.png";
 import MASTER_CARD from "assets/img/utils/MasterCard.png";
 import NIUBIZ from "assets/img/utils/niubiz.png";
-import OH from "assets/img/utils/Oh.png";
+import OH_CARTEL from "assets/img/utils/OhCartel.png";
 import VISA from "assets/img/utils/Visa.png";
 
 import "react-day-picker/lib/style.css";
@@ -257,7 +257,7 @@ const PayloadForm = () => {
           </Span>
           <S.ImagesCardsContainer>
             <S.ImageCards>
-              <ImageAtom src={OH} objectFit="cover" />
+              <ImageAtom src={OH_CARTEL} objectFit="cover" />
             </S.ImageCards>
           </S.ImagesCardsContainer>
         </S.PayMethodItem>
