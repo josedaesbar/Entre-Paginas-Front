@@ -156,3 +156,8 @@ export const ButtonContainer = styled.div`
   width: 100px;
   justify-self: end;
 `;
+
+export const AnchorLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+`;

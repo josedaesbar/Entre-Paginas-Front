@@ -18,20 +18,22 @@ interface CardProductsFullPropTypes {
 const CardProductsFull = ({ product }: CardProductsFullPropTypes) => {
   return (
     <S.Container>
-      <S.ImageContainer>
-        <Image src={product.image} objectFit="cover" alt="" />
-        {product.percentageDiscount && (
-          <S.DicountContainer>
-            <Text
-              fontSize={FontsSizes.MEDIUM_C}
-              fontWeight={FontsWeight.BLACK}
-              textColor={TColor.WHITE}
-            >
-              {product.percentageDiscount}% Dscto
-            </Text>
-          </S.DicountContainer>
-        )}
-      </S.ImageContainer>
+      <S.AnchorLink href="/book/example-code">
+        <S.ImageContainer>
+          <Image src={product.image} objectFit="cover" alt="" />
+          {product.percentageDiscount && (
+            <S.DicountContainer>
+              <Text
+                fontSize={FontsSizes.MEDIUM_C}
+                fontWeight={FontsWeight.BLACK}
+                textColor={TColor.WHITE}
+              >
+                {product.percentageDiscount}% Dscto
+              </Text>
+            </S.DicountContainer>
+          )}
+        </S.ImageContainer>
+      </S.AnchorLink>
       <S.InformationContainer>
         <S.TitleProduct>
           <Text
@@ -95,15 +97,17 @@ const CardProductsFull = ({ product }: CardProductsFullPropTypes) => {
             />
           </S.IconContainer>
           <S.ButtonContainer>
-            <Button buttonColor={Colors.RED}>
-              <Text
-                fontSize={FontsSizes.SMALL_C}
-                fontWeight={FontsWeight.MEDIUM}
-                textColor={TColor.WHITE}
-              >
-                Comprar
-              </Text>
-            </Button>
+            <S.AnchorLink href="/book/example-code">
+              <Button buttonColor={Colors.RED}>
+                <Text
+                  fontSize={FontsSizes.SMALL_C}
+                  fontWeight={FontsWeight.MEDIUM}
+                  textColor={TColor.WHITE}
+                >
+                  Comprar
+                </Text>
+              </Button>
+            </S.AnchorLink>
           </S.ButtonContainer>
         </S.ButtonGiftContainer>
       </S.InformationContainer>

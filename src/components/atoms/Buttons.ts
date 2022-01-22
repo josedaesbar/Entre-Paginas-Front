@@ -12,6 +12,7 @@ const ButtonStyles = css<ButtonStylesProps>`
   border: 0;
   outline: 0;
   justify-self: flex-end;
+  user-select: none;
 
   cursor: pointer;
 

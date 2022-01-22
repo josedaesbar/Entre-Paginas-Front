@@ -47,11 +47,11 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
   return (
     <S.Container>
       <S.ContentLeft>
-        <S.LogoLink>
-          <Link href="/" passHref>
+        <Link href="/" passHref>
+          <S.LogoLink>
             <ImageAtom src={Logo} alt="" />
-          </Link>
-        </S.LogoLink>
+          </S.LogoLink>
+        </Link>
 
         <S.MenuList>
           <Link href="/library" passHref>
@@ -125,11 +125,13 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
             />
           </S.IconContainer>
           <S.IconContainer>
-            <Icon
-              Icon={Icons.BOOK}
-              textColor={TColor.GRAY}
-              size={FontsSizes.MEDIUM_B}
-            />
+            <S.AnchorLink href="/cart">
+              <Icon
+                Icon={Icons.BOOK}
+                textColor={TColor.GRAY}
+                size={FontsSizes.MEDIUM_B}
+              />
+            </S.AnchorLink>
           </S.IconContainer>
         </S.IconsContent>
       </S.ContentRight>

@@ -16,9 +16,11 @@ interface CardProductsPropTypes {
 const CardProducts = ({ product }: CardProductsPropTypes) => {
   return (
     <S.Container>
-      <S.ImageContainer>
-        <Image src={product.image} objectFit="cover" alt="" />
-      </S.ImageContainer>
+      <S.AnchorLink href="/book/example-code">
+        <S.ImageContainer>
+          <Image src={product.image} objectFit="cover" alt="" />
+        </S.ImageContainer>
+      </S.AnchorLink>
       <S.InformationContainer>
         <Text
           fontSize={FontsSizes.SMALL_B}
@@ -38,16 +40,19 @@ const CardProducts = ({ product }: CardProductsPropTypes) => {
         >
           S/. {product.price}
         </Text>
+
         <S.ButtonContainer>
-          <Button buttonColor={Colors.RED}>
-            <Text
-              fontSize={FontsSizes.SMALL_C}
-              fontWeight={FontsWeight.MEDIUM}
-              textColor={TColor.WHITE}
-            >
-              Comprar
-            </Text>
-          </Button>
+          <S.AnchorLink href="/book/example-code">
+            <Button buttonColor={Colors.RED}>
+              <Text
+                fontSize={FontsSizes.SMALL_C}
+                fontWeight={FontsWeight.MEDIUM}
+                textColor={TColor.WHITE}
+              >
+                Comprar
+              </Text>
+            </Button>
+          </S.AnchorLink>
         </S.ButtonContainer>
       </S.InformationContainer>
     </S.Container>

@@ -19,6 +19,9 @@ import {
   IoLogoWhatsapp,
   IoLogoInstagram,
   IoIosCheckmark,
+  IoIosAdd,
+  IoIosRemove,
+  IoMdHeart,
 } from "react-icons/io";
 
 export const Icons = {
@@ -44,4 +47,7 @@ export const Icons = {
   INSTAGRAM: IoLogoInstagram,
 
   CHECK: IoIosCheckmark,
+  ADD: IoIosAdd,
+  REMOVE: IoIosRemove,
+  HEART: IoMdHeart,
 };

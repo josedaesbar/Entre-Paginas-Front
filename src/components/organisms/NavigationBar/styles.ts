@@ -96,3 +96,8 @@ export const IconsContent = styled.div`
 export const IconContainer = styled.div`
   cursor: pointer;
 `;
+
+export const AnchorLink = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+`;
