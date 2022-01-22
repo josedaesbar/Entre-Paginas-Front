@@ -19,4 +19,6 @@ export enum Colors {
   BROWN_A = "#B26B00",
 
   BLUE_A = "#009AF7",
+
+  GREEN = "green",
 }

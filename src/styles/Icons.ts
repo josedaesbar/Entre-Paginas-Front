@@ -22,6 +22,7 @@ import {
   IoIosAdd,
   IoIosRemove,
   IoMdHeart,
+  IoIosCheckmarkCircle,
 } from "react-icons/io";
 
 export const Icons = {
@@ -47,6 +48,7 @@ export const Icons = {
   INSTAGRAM: IoLogoInstagram,
 
   CHECK: IoIosCheckmark,
+  CHECK_B: IoIosCheckmarkCircle,
   ADD: IoIosAdd,
   REMOVE: IoIosRemove,
   HEART: IoMdHeart,

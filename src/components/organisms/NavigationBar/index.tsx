@@ -47,14 +47,14 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
   return (
     <S.Container>
       <S.ContentLeft>
-        <Link href="/" passHref>
+        <S.ReturnHome href="/">
           <S.LogoLink>
             <ImageAtom src={Logo} alt="" />
           </S.LogoLink>
-        </Link>
+        </S.ReturnHome>
 
         <S.MenuList>
-          <Link href="/library" passHref>
+          <S.ReturnHome href="/library">
             <S.MenuItem isActiveLink={route.pathname.split("/")[1] === "library"}>
               <Icon
                 Icon={Icons.LIST}
@@ -69,8 +69,8 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
                 BIBLIOTECA
               </Span>
             </S.MenuItem>
-          </Link>
-          <Link href="/next-releases" passHref>
+          </S.ReturnHome>
+          <S.ReturnHome href="/next-releases">
             <S.MenuItem
               isActiveLink={route.pathname.split("/")[1] === "next-releases"}
             >
@@ -87,8 +87,8 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
                 PROXIMOS ESTRENOS
               </Span>
             </S.MenuItem>
-          </Link>
-          <Link href="/news" passHref>
+          </S.ReturnHome>
+          <S.ReturnHome href="/news">
             <S.MenuItem isActiveLink={route.pathname.split("/")[1] === "news"}>
               <Icon
                 Icon={Icons.PAPER}
@@ -103,7 +103,7 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
                 NOTICIAS
               </Span>
             </S.MenuItem>
-          </Link>
+          </S.ReturnHome>
         </S.MenuList>
       </S.ContentLeft>
 

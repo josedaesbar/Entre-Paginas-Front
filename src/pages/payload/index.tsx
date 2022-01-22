@@ -1,12 +1,12 @@
 import PrincipalScreen from "@templates/PrincipalScreen";
-import Cart from "components/pages/Cart";
+import Payload from "components/pages/Payload";
 
-const PayloadPage = () => {
+const CartPage = () => {
   return (
     <PrincipalScreen>
-      <Cart />
+      <Payload />
     </PrincipalScreen>
   );
 };
 
-export default PayloadPage;
+export default CartPage;

@@ -26,4 +26,5 @@ export enum TColor {
   WHITE = Colors.WHITE,
   YELLOW = Colors.YELLOW_A,
   RED = Colors.RED,
+  GREEN = Colors.GREEN,
 }

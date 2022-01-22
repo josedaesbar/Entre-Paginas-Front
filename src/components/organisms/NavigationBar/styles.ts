@@ -101,3 +101,8 @@ export const AnchorLink = styled.a`
   text-decoration: none;
   cursor: pointer;
 `;
+
+export const ReturnHome = styled.a`
+  text-decoration: none;
+  cursor: pointer;
+`;
