@@ -23,6 +23,7 @@ import {
   IoIosRemove,
   IoMdHeart,
   IoIosCheckmarkCircle,
+  IoIosCart,
 } from "react-icons/io";
 
 export const Icons = {
@@ -52,4 +53,5 @@ export const Icons = {
   ADD: IoIosAdd,
   REMOVE: IoIosRemove,
   HEART: IoMdHeart,
+  CART: IoIosCart,
 };

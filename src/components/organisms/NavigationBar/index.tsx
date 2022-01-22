@@ -127,7 +127,7 @@ const NavigationBar = ({ setIsActiveMenu }: NavigationBarPropTypes) => {
           <S.IconContainer>
             <S.AnchorLink href="/cart">
               <Icon
-                Icon={Icons.BOOK}
+                Icon={Icons.CART}
                 textColor={TColor.GRAY}
                 size={FontsSizes.MEDIUM_B}
               />
