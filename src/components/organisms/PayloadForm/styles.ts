@@ -179,3 +179,35 @@ export const ImageCards = styled.div`
     object-fit: cover;
   }
 `;
+
+export const NiuBizImageCards = styled.div`
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+
+  & img {
+    border-radius: 5px;
+    object-fit: cover;
+  }
+`;
+
+export const NiuBizContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+  background-color: ${Colors.WHITE_B};
+  align-items: center;
+`;
+
+export const IconWithText = styled.div`
+  display: grid;
+  grid-template-columns: min-content max-content;
+  column-gap: 15px;
+  align-items: center;
+`;

@@ -13,6 +13,8 @@ import { MonthsSpanish } from "constants/months";
 import { useState } from "react";
 import DayPicker, { DateUtils } from "react-day-picker";
 import { ImageAtom } from "@atoms/Image";
+import Icon from "@atoms/Icon";
+import { Icons } from "@styles/Icons";
 
 type RangeDaysType = {
   selectedDay: Date | undefined;
@@ -284,6 +286,25 @@ const PayloadForm = () => {
           </S.ImagesCardsContainer>
         </S.PayMethodItem>
       </S.PayMethodContainer>
+      <S.NiuBizContainer>
+        <S.NiuBizImageCards>
+          <ImageAtom src={NIUBIZ} objectFit="cover" />
+        </S.NiuBizImageCards>
+        <S.IconWithText>
+          <Icon
+            Icon={Icons.LOCK}
+            textColor={TColor.BLACK}
+            size={FontsSizes.MEDIUM_A}
+          />
+          <Span
+            fontSize={FontsSizes.SMALL_A}
+            fontWeight={FontsWeight.THIN}
+            textColor={TColor.BLACK}
+          >
+            Tu pago es 100% seguro
+          </Span>
+        </S.IconWithText>
+      </S.NiuBizContainer>
     </S.Container>
   );
 };
